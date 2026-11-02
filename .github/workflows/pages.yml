@@ -24,7 +24,7 @@ jobs:
           missing=0
           for f in $(grep -oE '(src|href)="assets/[^"]+"' index.html | cut -d'"' -f2 | sort -u); do
             case "$f" in
-              assets/img/photo.jpg|assets/cv/*) continue ;;  # optionnels, gérés par le site
+              assets/img/photo.jpg|assets/cv/*|assets/img/logos/*) continue ;;  # optionnels, gérés par le site
             esac
             [ -f "$f" ] || { echo "::error::Fichier manquant : $f"; missing=1; }
           done
