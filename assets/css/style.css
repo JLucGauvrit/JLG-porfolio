@@ -168,10 +168,12 @@ h2 { font: 700 clamp(36px, 5vw, 56px) var(--serif); letter-spacing: -.03em; }
   flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px;
   background: var(--surface); border: 1px solid var(--line); overflow: hidden;
 }
-.logo img { width: 80%; height: 80%; object-fit: contain; }
+.logo:has(img) { background: #fff; }
+.logo img { width: 86%; height: 86%; object-fit: contain; }
 .logo b { font: 700 13px var(--mono); color: var(--accent); letter-spacing: -.02em; }
 .logo img + b { display: none; }
-.logo--xl { width: 112px; height: 112px; border-radius: 24px; }
+.logo--xl { width: 168px; height: 120px; border-radius: 20px; }
+.logo--xl img { width: 84%; height: 84%; }
 .logo--xl b { font: 700 30px var(--serif); }
 
 /* Bandeau établissements */

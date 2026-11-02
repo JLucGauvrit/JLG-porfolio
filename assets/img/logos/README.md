@@ -1,12 +1,6 @@
-Logos des établissements (facultatif). Dépose-les ici avec ces noms exacts :
+Logos des établissements. Un logo absent est remplacé par un monogramme.
 
-- `imt-atlantique.svg` (ou modifie l'extension dans index.html)
-- `snu.svg`
-- `orange.svg`
-- `aws.svg`
-- `polytech-nantes.svg`
-- `polytech-angers.svg`
-- `marcel-callo.svg`
-
-Tant qu'un logo est absent, un monogramme s'affiche à la place.
-Sources conseillées : pages « presse / identité visuelle » de chaque école, ou Wikimedia Commons.
+- `imt-atlantique.png` : symbole seul (bandeau « Formé et passé par »)
+- `imt-atlantique-full.png` : logo complet (carte Formation)
+- `polytech-nantes.png`, `polytech-angers.png`, `marcel-callo.png`
+- Optionnels, non fournis : `snu.svg`, `orange.svg`, `aws.svg`
