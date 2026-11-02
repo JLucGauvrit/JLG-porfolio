@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jean-Luc Gauvrit · Ingénieur IA, Data & Cloud</title>
+  <meta name="description" content="Portfolio de Jean-Luc Gauvrit, ingénieur IMT Atlantique : IA générative (LLM, RAG, agents), data, cloud et Green IT. Projets, parcours et contact.">
+  <meta property="og:title" content="Jean-Luc Gauvrit · Ingénieur IA, Data & Cloud">
+  <meta property="og:description" content="IA générative, data, cloud et Green IT. Projets, parcours et contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/photo.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Applique thème et langue avant le rendu pour éviter un flash
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.dataset.theme = t;
+        var l = localStorage.getItem('lang');
+        if (l) document.documentElement.lang = l;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Accueil">JLG<span>.</span></a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#projets"><span lang="fr">Projets</span><span lang="en">Projects</span></a>
+        <a href="#parcours"><span lang="fr">Parcours</span><span lang="en">Experience</span></a>
+        <a href="#competences"><span lang="fr">Compétences</span><span lang="en">Skills</span></a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <button class="tool" id="langToggle" type="button" aria-label="Switch language">
+          <span lang="fr">EN</span><span lang="en">FR</span>
+        </button>
+        <button class="tool" id="themeToggle" type="button" aria-label="Changer de thème">
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__text reveal">
+        <p class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          <span lang="fr">Disponible · Paris</span><span lang="en">Available · Paris</span>
+        </p>
+        <h1>Jean-Luc<br><em>Gauvrit</em></h1>
+        <p class="hero__role">
+          <span lang="fr">Ingénieur IA, Data &amp; Cloud</span><span lang="en">AI, Data &amp; Cloud Engineer</span>
+        </p>
+        <p class="hero__lead">
+          <span lang="fr">Diplômé d'IMT Atlantique, trois ans chez Orange International Networks. Je conçois des plateformes d'IA générative (LLM, RAG, agents), des pipelines de données et des outils de mesure d'impact pour un numérique plus sobre.</span>
+          <span lang="en">IMT Atlantique engineering graduate with three years at Orange International Networks. I build generative AI platforms (LLMs, RAG, agents), data pipelines and impact-measurement tooling for more sustainable IT.</span>
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projets"><span lang="fr">Voir mes projets</span><span lang="en">See my projects</span></a>
+          <a class="btn" href="#contact"><span lang="fr">Me contacter</span><span lang="en">Get in touch</span></a>
+          <a class="btn btn--ghost" id="cvLink" href="assets/cv/CV_Jean-Luc_Gauvrit.pdf" download hidden>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+            <span lang="fr">CV (PDF)</span><span lang="en">Resume (PDF)</span>
+          </a>
+        </div>
+        <ul class="socials" aria-label="Réseaux">
+          <li><a href="https://www.linkedin.com/in/jean-luc-gauvrit-8903a8223/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/JLucGauvrit" target="_blank" rel="noopener">GitHub ↗</a></li>
+        </ul>
+      </div>
+      <figure class="hero__photo reveal">
+        <div class="photo-frame">
+          <img src="assets/img/photo.jpg" alt="Portrait de Jean-Luc Gauvrit" width="520" height="640"
+               onerror="this.parentElement.classList.add('is-empty'); this.remove();">
+          <span class="photo-fallback" aria-hidden="true">JLG</span>
+        </div>
+        <figcaption class="badge">
+          <strong>AWS</strong>
+          <span lang="fr">Certifié AI &amp; Cloud Practitioner</span><span lang="en">Certified AI &amp; Cloud Practitioner</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- STATS -->
+    <section class="wrap stats reveal" aria-label="Chiffres clés">
+      <div class="stat"><b>3</b><span lang="fr">ans chez Orange</span><span lang="en">years at Orange</span></div>
+      <div class="stat"><b>2</b><span lang="fr">prix (Orange-Nokia, Pépite)</span><span lang="en">awards (Orange-Nokia, Pépite)</span></div>
+      <div class="stat"><b>6</b><span lang="fr">personnes pilotées sur Kiwi DB</span><span lang="en">people led on Kiwi DB</span></div>
+      <div class="stat"><b>C1</b><span lang="fr">anglais · TOEIC 850</span><span lang="en">English · TOEIC 850</span></div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section wrap" id="projets">
+      <header class="section__head reveal">
+        <p class="kicker">01</p>
+        <h2><span lang="fr">Projets</span><span lang="en">Projects</span></h2>
+        <p class="section__sub">
+          <span lang="fr">Une sélection de projets aboutis, du prototype livré au client à la solution primée.</span>
+          <span lang="en">A selection of completed projects, from client deliveries to award-winning prototypes.</span>
+        </p>
+      </header>
+
+      <div class="filters reveal" role="group" aria-label="Filtrer les projets">
+        <button class="chip is-active" data-filter="all"><span lang="fr">Tous</span><span lang="en">All</span></button>
+        <button class="chip" data-filter="ia"><span lang="fr">IA &amp; LLM</span><span lang="en">AI &amp; LLM</span></button>
+        <button class="chip" data-filter="green">Green IT</button>
+        <button class="chip" data-filter="hw"><span lang="fr">Systèmes &amp; FPGA</span><span lang="en">Systems &amp; FPGA</span></button>
+        <button class="chip" data-filter="dev"><span lang="fr">Développement</span><span lang="en">Software</span></button>
+      </div>
+
+      <div class="projects">
+        <article class="project project--feature reveal" data-tags="ia dev">
+          <div class="project__meta">
+            <span class="pill pill--accent"><span lang="fr">Livré client</span><span lang="en">Client delivery</span></span>
+            <span>2026 · Manta Tech</span>
+          </div>
+          <h3>Kiwi DB</h3>
+          <p>
+            <span lang="fr">Plateforme RAG multi-agents appliquant les LLM aux documents métier du client. Pilotage technique d'une équipe de 6 : recueil du besoin, POC puis mise en production. Orchestrateur FastAPI, passerelle MCP, recherche sémantique PostgreSQL/pgvector, interface Open WebUI.</span>
+            <span lang="en">Multi-agent RAG platform applying LLMs to the client's business documents. Technical lead of a 6-person team, from requirements to POC to production. FastAPI orchestrator, MCP gateway, PostgreSQL/pgvector semantic search, Open WebUI front end.</span>
+          </p>
+          <ul class="tags"><li>RAG</li><li>MCP</li><li>FastAPI</li><li>pgvector</li><li>Docker</li><li>GitHub Actions</li></ul>
+          <a class="project__link" href="https://github.com/JLucGauvrit/Kiwi-DB" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+
+        <article class="project project--feature reveal" data-tags="hw green ia">
+          <div class="project__meta">
+            <span class="pill pill--gold"><span lang="fr">Lauréat</span><span lang="en">Winner</span></span>
+            <span>2025 · Orange × Nokia</span>
+          </div>
+          <h3>Inference-HW</h3>
+          <p>
+            <span lang="fr">Inférence de LLM sobre en énergie sur CPU et FPGA (Xilinx ZCU106) : backend C++17, noyaux HLS pour les opérations transformer (MatMul, Softmax, RMSNorm, RoPE), chaîne Docker reproductible jusqu'à l'image PetaLinux. Lauréat du Challenge Orange-Nokia 2025, prix du jury Spice Up, Pépite Pays de la Loire 2026.</span>
+            <span lang="en">Energy-efficient LLM inference on CPU and FPGA (Xilinx ZCU106): C++17 backend, HLS kernels for transformer ops (MatMul, Softmax, RMSNorm, RoPE), reproducible Docker toolchain down to the PetaLinux image. Winner of the Orange-Nokia Challenge 2025, Spice Up jury prize, Pépite Pays de la Loire 2026.</span>
+          </p>
+          <ul class="tags"><li>C++</li><li>HLS / Vitis</li><li>FPGA</li><li>Docker</li><li>Green AI</li></ul>
+          <a class="project__link" href="https://github.com/JLucGauvrit/Inference-HW" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+
+        <article class="project reveal" data-tags="ia">
+          <div class="project__meta">
+            <span class="pill">Hackathon</span>
+            <span>2026 · Google DeepMind · 42 Paris</span>
+          </div>
+          <h3>Devil's Advocates</h3>
+          <p>
+            <span lang="fr">Moteur de désaccord pour affirmations scientifiques contestées : récupération d'articles réels via MCP, deux avocats Gemma qui débattent chacun à partir de leurs sources, un juge qui nomme le point de bascule. Chaque affirmation est sourcée (DOI). Context engineering pour petits modèles.</span>
+            <span lang="en">A disagreement engine for contested scientific claims: real papers retrieved over MCP, two Gemma advocates debating from their own evidence, and a judge naming the crux. Every claim carries provenance (DOI). Context engineering for small models.</span>
+          </p>
+          <ul class="tags"><li>Gemma 4</li><li>LangGraph</li><li>MCP</li><li>vLLM</li></ul>
+          <a class="project__link" href="https://github.com/JLucGauvrit/gemma4-hackthon" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+
+        <article class="project reveal" data-tags="ia green">
+          <div class="project__meta">
+            <span class="pill">Lab</span>
+            <span>2026</span>
+          </div>
+          <h3><span lang="fr">Benchmark des moteurs d'inférence LLM</span><span lang="en">LLM inference engine benchmark</span></h3>
+          <p>
+            <span lang="fr">Banc d'essai Docker comparant AirLLM, llama.cpp, Ollama et vLLM sur GPU : TTFT, débit, latences p50/p95/p99, taux de succès. Supervision Prometheus et Grafana pour choisir le modèle le plus sobre adapté au besoin.</span>
+            <span lang="en">Docker test bench comparing AirLLM, llama.cpp, Ollama and vLLM on GPU: TTFT, throughput, p50/p95/p99 latency and success rate, monitored with Prometheus and Grafana to pick the leanest model for the job.</span>
+          </p>
+          <ul class="tags"><li>llama.cpp</li><li>vLLM</li><li>Ollama</li><li>Prometheus</li><li>Grafana</li></ul>
+          <a class="project__link" href="https://github.com/JLucGauvrit/Benchmarck-moteurs-inferences" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+
+        <article class="project reveal" data-tags="ia dev">
+          <div class="project__meta">
+            <span class="pill"><span lang="fr">Projet perso</span><span lang="en">Side project</span></span>
+            <span>2026</span>
+          </div>
+          <h3>BotMarket</h3>
+          <p>
+            <span lang="fr">Bot de trading en paper trading piloté par un graphe d'agents LangGraph (découverte, analyse technique, risque, exécution) et un LLM 100 % local via Ollama. Passerelle FastAPI isolant les clés API, tableau de bord Streamlit, tests unitaires et d'intégration mockés.</span>
+            <span lang="en">Paper-trading bot driven by a LangGraph agent graph (discovery, technical analysis, risk, execution) with a fully local LLM via Ollama. FastAPI gateway isolating API keys, Streamlit dashboard, mocked unit and integration tests.</span>
+          </p>
+          <ul class="tags"><li>LangGraph</li><li>Ollama</li><li>FastAPI</li><li>Streamlit</li><li>pytest</li></ul>
+          <a class="project__link" href="https://github.com/JLucGauvrit/BotMarket" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+
+        <article class="project reveal" data-tags="green">
+          <div class="project__meta">
+            <span class="pill">Orange</span>
+            <span>2023 – 2026</span>
+          </div>
+          <h3><span lang="fr">Mesure carbone des services cloud (MELIAE)</span><span lang="en">Cloud carbon measurement (MELIAE)</span></h3>
+          <p>
+            <span lang="fr">Contribution à l'outil interne mesurant les émissions scopes 1, 2 et 3 du cloud privé d'Orange. Projet de fin d'études : comparaison avec Azure Carbon Optimization et GCP Carbon Footprint (périmètre, hypothèses, granularité, fiabilité), recommandations présentées au management.</span>
+            <span lang="en">Contributed to Orange's internal tool measuring scope 1, 2 and 3 emissions of its private cloud. Final-year project: benchmarked it against Azure Carbon Optimization and GCP Carbon Footprint (scope, assumptions, granularity, reliability) and presented recommendations to management.</span>
+          </p>
+          <ul class="tags"><li>Python</li><li>SQL</li><li>Grafana</li><li>Power BI</li><li>FinOps / GreenOps</li></ul>
+          <span class="project__link project__link--muted"><span lang="fr">Projet interne · code non public</span><span lang="en">Internal project · code not public</span></span>
+        </article>
+
+        <article class="project reveal" data-tags="dev">
+          <div class="project__meta">
+            <span class="pill">IMT Atlantique</span>
+            <span>2025</span>
+          </div>
+          <h3>JobManagement</h3>
+          <p>
+            <span lang="fr">Application web de recrutement mettant en relation offres d'emploi et candidatures par secteur et niveau de qualification : modélisation des données, entités JPA, DAO, services métier et interface Thymeleaf sur PostgreSQL.</span>
+            <span lang="en">Recruitment web app matching job offers and applications by sector and qualification level: data modelling, JPA entities, DAOs, business services and a Thymeleaf UI on PostgreSQL.</span>
+          </p>
+          <ul class="tags"><li>Java</li><li>JPA</li><li>Thymeleaf</li><li>PostgreSQL</li></ul>
+          <a class="project__link" href="https://github.com/JLucGauvrit/SaaS-Gestionnaire-d-Offres-d-Emploi-et-de-Candidatures" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+
+        <article class="project reveal" data-tags="dev hw">
+          <div class="project__meta">
+            <span class="pill">IMT Atlantique</span>
+            <span>2024</span>
+          </div>
+          <h3><span lang="fr">Simulateur de chaîne de transmission</span><span lang="en">Transmission chain simulator</span></h3>
+          <p>
+            <span lang="fr">Simulateur Java d'une chaîne de transmission numérique : génération de messages, transmetteurs, sondes de visualisation, scripts de compilation, de déploiement et de documentation.</span>
+            <span lang="en">Java simulator of a digital transmission chain: message generation, transmitters, visualisation probes, build, deployment and documentation scripts.</span>
+          </p>
+          <ul class="tags"><li>Java</li><li><span lang="fr">Télécoms</span><span lang="en">Telecom</span></li><li><span lang="fr">Signal</span><span lang="en">Signal</span></li></ul>
+          <a class="project__link" href="https://github.com/JLucGauvrit/SIT-213" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section wrap" id="parcours">
+      <header class="section__head reveal">
+        <p class="kicker">02</p>
+        <h2><span lang="fr">Parcours</span><span lang="en">Experience</span></h2>
+      </header>
+
+      <div class="timeline">
+        <article class="tl reveal">
+          <p class="tl__date"><span lang="fr">Sept. 2023 – Sept. 2026</span><span lang="en">Sep 2023 – Sep 2026</span></p>
+          <div class="tl__body">
+            <h3><span lang="fr">Ingénieur apprenti Data, Cloud &amp; Green IT</span><span lang="en">Data, Cloud &amp; Green IT Engineer (apprenticeship)</span></h3>
+            <p class="tl__org">Orange OINIS, International Networks · Rennes</p>
+            <ul>
+              <li><span lang="fr">Pipelines Python et SQL collectant des sources hétérogènes (plateformes internes, API Azure et GCP) vers PostgreSQL, avec CI/CD.</span><span lang="en">Python and SQL pipelines collecting heterogeneous sources (internal platforms, Azure and GCP APIs) into PostgreSQL, with CI/CD.</span></li>
+              <li><span lang="fr">KPI de coûts et de carbone intégrés aux outils de supervision (Grafana, Prometheus, Power BI) ; déploiements Terraform.</span><span lang="en">Cost and carbon KPIs integrated into monitoring tools (Grafana, Prometheus, Power BI); Terraform deployments.</span></li>
+              <li><span lang="fr">Audit des outils FinOps et GreenOps, détection d'anomalies, règles de rapprochement entre sources.</span><span lang="en">Audited FinOps and GreenOps tools, detected anomalies, defined reconciliation rules between sources.</span></li>
+              <li><span lang="fr">Équipe Virtualisation : lab Ecocenter sous VMware (ESXi, vCenter, vSAN, NSX), incidents et demandes via JIRA.</span><span lang="en">Virtualisation team: Ecocenter lab on VMware (ESXi, vCenter, vSAN, NSX), incidents and requests in JIRA.</span></li>
+              <li><span lang="fr">Sensibilisation des équipes au Numérique Responsable et à l'écoconception.</span><span lang="en">Ran sustainable-IT and eco-design awareness sessions for engineering teams.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl reveal">
+          <p class="tl__date"><span lang="fr">Juin – Août 2025</span><span lang="en">Jun – Aug 2025</span></p>
+          <div class="tl__body">
+            <h3><span lang="fr">Stagiaire de recherche en Deep Learning</span><span lang="en">Deep Learning Research Intern</span></h3>
+            <p class="tl__org">Seoul National University, Deep Learning Lab · <span lang="fr">Séoul, Corée du Sud</span><span lang="en">Seoul, South Korea</span></p>
+            <ul>
+              <li><span lang="fr">Cadre expérimental de bout en bout en équipe internationale et en anglais : préparation des données, entraînement et optimisation de modèles (PyTorch, TensorFlow), métriques d'évaluation, restitution.</span><span lang="en">End-to-end experimental setup in an international, English-speaking team: data preparation, model training and tuning (PyTorch, TensorFlow), evaluation metrics, reporting.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl tl--edu reveal">
+          <p class="tl__date">2023 – 2026</p>
+          <div class="tl__body">
+            <h3><span lang="fr">Diplôme d'ingénieur, Informatique, Réseaux &amp; Télécommunications</span><span lang="en">Master's-level Engineering Degree, Computer Science, Networks &amp; Telecom</span></h3>
+            <p class="tl__org">IMT Atlantique, Institut Mines-Télécom (FIP, ITII Bretagne)</p>
+            <p class="tl__note"><span lang="fr">Avant : prépa ATS, Lycée Marcel Callo, Redon (2022 – 2023) · Polytech Nantes, électronique et systèmes numériques (2021 – 2022).</span><span lang="en">Before: ATS preparatory class, Lycée Marcel Callo, Redon (2022 – 2023) · Polytech Nantes, electronics and digital systems (2021 – 2022).</span></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="awards reveal">
+        <h3 class="awards__title"><span lang="fr">Distinctions &amp; engagements</span><span lang="en">Awards &amp; involvement</span></h3>
+        <ul class="awards__list">
+          <li><b>🏆</b><span lang="fr">Lauréat du Challenge Orange-Nokia 2025</span><span lang="en">Winner, Orange-Nokia Challenge 2025</span></li>
+          <li><b>🏅</b><span lang="fr">Prix du jury Spice Up, Pépite Pays de la Loire 2026</span><span lang="en">Spice Up jury prize, Pépite Pays de la Loire 2026</span></li>
+          <li><b>☁️</b><span lang="fr">AWS Certified AI Practitioner &amp; Cloud Practitioner (2026)</span><span lang="en">AWS Certified AI Practitioner &amp; Cloud Practitioner (2026)</span></li>
+          <li><b>🎤</b><span lang="fr">Organisation d'une conférence sur l'IA et la souveraineté numérique, avec un député et l'entrepreneur Quentin Adam</span><span lang="en">Organised a conference on AI and digital sovereignty with a French MP and entrepreneur Quentin Adam</span></li>
+          <li><b>⚖️</b><span lang="fr">Membre du jury du hackathon AWS × Centrale</span><span lang="en">Jury member, AWS × Centrale hackathon</span></li>
+          <li><b>🏉</b><span lang="fr">Rugby : champion de Bretagne 2023-2024 · Échecs (Elo 1200)</span><span lang="en">Rugby: Brittany champion 2023-2024 · Chess (Elo 1200)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section wrap" id="competences">
+      <header class="section__head reveal">
+        <p class="kicker">03</p>
+        <h2><span lang="fr">Compétences</span><span lang="en">Skills</span></h2>
+      </header>
+      <div class="skills">
+        <div class="skill reveal">
+          <h3><span lang="fr">IA générative &amp; ML</span><span lang="en">Generative AI &amp; ML</span></h3>
+          <ul class="tags"><li>LLM</li><li>RAG</li><li>LangChain</li><li>LangGraph</li><li>MCP</li><li>Prompt &amp; context engineering</li><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>pgvector</li><li>llama.cpp · Ollama · vLLM</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><span lang="fr">Développement &amp; data</span><span lang="en">Software &amp; data</span></h3>
+          <ul class="tags"><li>Python</li><li>Java</li><li>SQL · PL/SQL</li><li>C/C++</li><li>R</li><li>FastAPI</li><li>Pandas · NumPy</li><li>PostgreSQL</li><li>Power BI</li><li>Git</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><span lang="fr">Cloud &amp; MLOps</span><span lang="en">Cloud &amp; MLOps</span></h3>
+          <ul class="tags"><li>AWS</li><li>Azure</li><li>GCP</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>GitHub Actions · GitLab CI · Jenkins</li><li>Prometheus · Grafana</li><li>VMware · Proxmox</li><li>Linux</li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><span lang="fr">Numérique Responsable</span><span lang="en">Sustainable IT</span></h3>
+          <ul class="tags"><li>Green IT</li><li>GR491</li><li><span lang="fr">Écoconception</span><span lang="en">Eco-design</span></li><li><span lang="fr">Empreinte carbone scopes 1-2-3</span><span lang="en">Scope 1-2-3 carbon footprint</span></li><li>FinOps · GreenOps</li><li><span lang="fr">Sensibilisation</span><span lang="en">Awareness training</span></li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><span lang="fr">Méthodes</span><span lang="en">Ways of working</span></h3>
+          <ul class="tags"><li>Scrum · Kanban</li><li>DevOps</li><li>JIRA</li><li>Confluence</li><li><span lang="fr">Recueil du besoin</span><span lang="en">Requirements gathering</span></li><li><span lang="fr">Pilotage d'équipe</span><span lang="en">Team leadership</span></li></ul>
+        </div>
+        <div class="skill reveal">
+          <h3><span lang="fr">Langues</span><span lang="en">Languages</span></h3>
+          <ul class="tags"><li><span lang="fr">Français · natif</span><span lang="en">French · native</span></li><li><span lang="fr">Anglais · C1 (TOEIC 850)</span><span lang="en">English · C1 (TOEIC 850)</span></li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section wrap contact" id="contact">
+      <div class="contact__card reveal">
+        <p class="kicker">04</p>
+        <h2><span lang="fr">Travaillons ensemble</span><span lang="en">Let's work together</span></h2>
+        <p>
+          <span lang="fr">Un poste en IA, data, cloud ou Green IT ? Un projet à lancer ? Écrivez-moi, je réponds rapidement.</span>
+          <span lang="en">An AI, data, cloud or Green IT role? A project to kick off? Drop me a line, I reply quickly.</span>
+        </p>
+        <a class="btn btn--primary btn--lg" id="mailLink" href="#" data-u="gauvritj37" data-d="gmail.com">
+          <span class="mail-text">gauvritj37 [at] gmail.com</span>
+        </a>
+        <ul class="socials socials--center">
+          <li><a href="https://www.linkedin.com/in/jean-luc-gauvrit-8903a8223/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/JLucGauvrit" target="_blank" rel="noopener">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>© <span id="year">2026</span> Jean-Luc Gauvrit</p>
+    <p><span lang="fr">Site statique, léger et sans traceur</span><span lang="en">Lightweight static site, no trackers</span> 🌱</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
