@@ -170,6 +170,7 @@ h2 { font: 700 clamp(36px, 5vw, 56px) var(--serif); letter-spacing: -.03em; }
 }
 .logo:has(img) { background: #fff; }
 .logo img { width: 86%; height: 86%; object-fit: contain; }
+.logo--fill img { width: 100%; height: 100%; }
 .logo b { font: 700 13px var(--mono); color: var(--accent); letter-spacing: -.02em; }
 .logo img + b { display: none; }
 .logo--xl { width: 168px; height: 120px; border-radius: 20px; }
