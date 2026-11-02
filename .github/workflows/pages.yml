@@ -1,0 +1,51 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vérifier que les fichiers locaux référencés existent
+        run: |
+          missing=0
+          for f in $(grep -oE '(src|href)="assets/[^"]+"' index.html | cut -d'"' -f2 | sort -u); do
+            case "$f" in
+              assets/img/photo.jpg|assets/cv/*) continue ;;  # optionnels, gérés par le site
+            esac
+            [ -f "$f" ] || { echo "::error::Fichier manquant : $f"; missing=1; }
+          done
+          exit $missing
+
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Préparer le site
+        run: |
+          mkdir _site
+          cp -r index.html assets .nojekyll _site/
+          [ -f CNAME ] && cp CNAME _site/ || true
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
