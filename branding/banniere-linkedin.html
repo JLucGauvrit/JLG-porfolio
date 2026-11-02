@@ -1,0 +1,64 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=block" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1584px;height:396px;overflow:hidden}
+body{position:relative;background:#0b0e12;color:#eceef2;font-family:Inter,sans-serif}
+.glow{position:absolute;border-radius:50%;filter:blur(60px)}
+.g1{width:620px;height:620px;left:-160px;top:-260px;background:rgba(20,184,166,.28)}
+.g2{width:520px;height:520px;right:-120px;bottom:-320px;background:rgba(45,212,191,.18)}
+.grid{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1.3px);background-size:22px 22px;
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.65) 40%,transparent 75%)}
+svg.traces{position:absolute;left:0;top:0}
+.content{position:absolute;left:520px;right:56px;top:46px;bottom:40px;display:flex;flex-direction:column;justify-content:space-between}
+.kicker{font:600 15px 'JetBrains Mono',monospace;letter-spacing:.14em;color:#5eead4;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.kicker i{display:inline-block;width:34px;height:2px;background:#5eead4}
+h1{font:700 64px/1.02 Fraunces,serif;letter-spacing:-.03em;margin-top:14px}
+h1 em{color:#2dd4bf;font-style:italic}
+.sub{font:500 20px Inter;color:#aab2bf;margin-top:12px}
+.sub b{color:#eceef2;font-weight:600}
+.bottom{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logos{display:flex;gap:10px;align-items:center}
+.logo{width:50px;height:50px;border-radius:12px;background:#fff;display:grid;place-items:center;overflow:hidden}
+.logo img{width:84%;height:84%;object-fit:contain}
+.logo.fill img{width:100%;height:100%}
+.logo.wide{width:96px}
+.awards{display:flex;gap:10px}
+.pill{font:600 13.5px Inter;padding:9px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#e5e7eb;white-space:nowrap}
+.pill.gold{border-color:rgba(240,181,74,.5);background:rgba(240,181,74,.12);color:#f5c76b}
+.url{position:absolute;right:56px;top:46px;font:600 16px 'JetBrains Mono',monospace;color:#eceef2;padding:8px 14px;border:1px solid rgba(94,234,212,.45);border-radius:999px;background:rgba(20,184,166,.12)}
+</style></head><body>
+<div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div>
+<!-- Pistes façon circuit imprimé, côté gauche (zone de la photo de profil) -->
+<svg class="traces" width="560" height="396" viewBox="0 0 560 396" fill="none" stroke="rgba(94,234,212,.35)" stroke-width="2" stroke-linecap="round">
+  <path d="M0 70 H120 L160 110 H300 L340 70 H470"/>
+  <path d="M0 130 H80 L110 160 H230"/>
+  <path d="M60 0 V40 L90 70"/>
+  <path d="M250 0 V50 L300 100 V160 L330 190 H450"/>
+  <path d="M400 0 V40 L430 70"/>
+  <path d="M380 260 L420 220 H500"/>
+  <g fill="#0b0e12" stroke="rgba(94,234,212,.7)"><circle cx="470" cy="70" r="5"/><circle cx="230" cy="160" r="5"/><circle cx="450" cy="190" r="5"/><circle cx="500" cy="220" r="5"/><circle cx="90" cy="70" r="4"/><circle cx="430" cy="70" r="4"/></g>
+  <rect x="150" y="190" width="110" height="80" rx="10" stroke="rgba(94,234,212,.4)"/>
+  <g stroke="rgba(94,234,212,.3)"><path d="M170 190 V176 M190 190 V176 M210 190 V176 M230 190 V176 M170 270 V284 M190 270 V284 M210 270 V284 M230 270 V284"/></g>
+</svg>
+<div class="url">jeanluc.gvrt.fr</div>
+<div class="content">
+  <div>
+    <p class="kicker"><i></i>Ingénieur IMT Atlantique</p>
+    <h1>IA générative, <em>Data</em> &amp; Cloud</h1>
+    <p class="sub"><b>LLM · RAG · Agents</b> &nbsp;—&nbsp; inférence sur FPGA &nbsp;—&nbsp; Green IT</p>
+  </div>
+  <div class="bottom">
+    <div class="logos">
+      <span class="logo"><img src="../assets/img/logos/imt-atlantique.png"></span>
+      <span class="logo"><img src="../assets/img/logos/snu.png"></span>
+      <span class="logo fill"><img src="../assets/img/logos/orange.png"></span>
+      <span class="logo"><img src="../assets/img/logos/aws.png"></span>
+    </div>
+    <div class="awards">
+      <span class="pill gold">🏆 Lauréat Orange × Nokia 2025</span>
+      <span class="pill gold">Prix du jury Spice Up 2026</span>
+    </div>
+  </div>
+</div>
+</body></html>
