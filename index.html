@@ -122,7 +122,7 @@
       <div class="stat"><b>Bac+5</b><span lang="fr">ingénieur IMT Atlantique</span><span lang="en">IMT Atlantique engineer</span></div>
       <div class="stat"><b>3</b><span lang="fr">ans d'alternance chez Orange</span><span lang="en">years apprenticeship at Orange</span></div>
       <div class="stat"><b>2</b><span lang="fr">prix (Orange-Nokia, Pépite)</span><span lang="en">awards (Orange-Nokia, Pépite)</span></div>
-      <div class="stat"><b>C1</b><span lang="fr">anglais · TOEIC 850</span><span lang="en">English · TOEIC 850</span></div>
+      <div class="stat"><b>C1</b><span lang="fr">anglais · TOEIC 870</span><span lang="en">English · TOEIC 870</span></div>
     </section>
 
     <!-- À LA UNE : INFERENCE-HW, DE SÉOUL À LA SCÈNE -->
@@ -165,8 +165,6 @@
 
       <div class="gallery reveal">
         <figure><img src="assets/img/inference/seoul-snu.jpg" alt="Devant la porte de Seoul National University, de nuit, avec le kit AMD Zynq UltraScale+" loading="lazy" width="1280" height="960"><figcaption>Seoul National University</figcaption></figure>
-        <figure><img src="assets/img/inference/spiceup-prix.jpg" alt="Remise du prix du jury sur la scène du Spice Up" loading="lazy" width="1600" height="1070"><figcaption><span lang="fr">Remise du prix du jury</span><span lang="en">Jury prize ceremony</span></figcaption></figure>
-        <figure><img src="assets/img/inference/spiceup-salle.jpg" alt="La salle comble pendant la cérémonie Spice Up" loading="lazy" width="1600" height="1070"><figcaption><span lang="fr">Spice Up · 5 ans</span><span lang="en">Spice Up · 5th anniversary</span></figcaption></figure>
       </div>
     </section>
 
@@ -218,6 +216,20 @@
           <a class="project__link" href="https://github.com/JLucGauvrit/Inference-HW" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
         </article>
 
+        <article class="project reveal" data-tags="ia hw dev">
+          <div class="project__meta">
+            <span class="pill"><span lang="fr">Challenge en cours</span><span lang="en">Ongoing challenge</span></span>
+            <span>2026 · Eclipse Aidge · CNES × Viveris</span>
+          </div>
+          <h3>Aidge in Space</h3>
+          <p>
+            <span lang="fr">Compression d'images embarquée pour un rover lunaire, sur un cas d'usage du CNES et de Viveris : un encodeur neuronal (Ballé et al.) porté sur un SoC CPU + FPGA via ONNX → Aidge → LoCod. Développement de la plateforme d'entraînement de l'équipe (interface Gradio, file de jobs SQLite, worker GPU) et du banc d'essai face à JPEG, JPEG 2000 et WebP : courbes débit/distorsion, BD-rate, coût de calcul sur la carte. CI/CD vers GHCR, déploiement auto-hébergé avec retour arrière automatique.</span>
+            <span lang="en">Onboard image compression for a lunar rover, on a CNES and Viveris use case: a neural encoder (Ballé et al.) ported to a CPU + FPGA SoC through ONNX → Aidge → LoCod. Built the team's training platform (Gradio UI, SQLite job queue, GPU worker) and the benchmark against JPEG, JPEG 2000 and WebP: rate-distortion curves, BD-rate, on-board compute cost. CI/CD to GHCR and self-hosted deployment with automatic rollback.</span>
+          </p>
+          <ul class="tags"><li>PyTorch</li><li>ONNX</li><li>Aidge</li><li>FPGA</li><li>Gradio</li><li>Docker</li><li>GitHub Actions</li></ul>
+          <a class="project__link" href="https://github.com/Aidge-in-space-hackathon/aidge-train" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
+        </article>
+
         <article class="project reveal" data-tags="ia">
           <div class="project__meta">
             <span class="pill">Hackathon</span>
@@ -230,34 +242,6 @@
           </p>
           <ul class="tags"><li>Gemma 4</li><li>LangGraph</li><li>MCP</li><li>vLLM</li></ul>
           <a class="project__link" href="https://github.com/JLucGauvrit/gemma4-hackthon" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
-        </article>
-
-        <article class="project reveal" data-tags="ia green">
-          <div class="project__meta">
-            <span class="pill">Lab</span>
-            <span>2026</span>
-          </div>
-          <h3><span lang="fr">Benchmark des moteurs d'inférence LLM</span><span lang="en">LLM inference engine benchmark</span></h3>
-          <p>
-            <span lang="fr">Banc d'essai Docker comparant AirLLM, llama.cpp, Ollama et vLLM sur GPU : TTFT, débit, latences p50/p95/p99, taux de succès. Supervision Prometheus et Grafana pour choisir le modèle le plus sobre adapté au besoin.</span>
-            <span lang="en">Docker test bench comparing AirLLM, llama.cpp, Ollama and vLLM on GPU: TTFT, throughput, p50/p95/p99 latency and success rate, monitored with Prometheus and Grafana to pick the leanest model for the job.</span>
-          </p>
-          <ul class="tags"><li>llama.cpp</li><li>vLLM</li><li>Ollama</li><li>Prometheus</li><li>Grafana</li></ul>
-          <a class="project__link" href="https://github.com/JLucGauvrit/Benchmarck-moteurs-inferences" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
-        </article>
-
-        <article class="project reveal" data-tags="ia dev">
-          <div class="project__meta">
-            <span class="pill"><span lang="fr">Projet perso</span><span lang="en">Side project</span></span>
-            <span>2026</span>
-          </div>
-          <h3>BotMarket</h3>
-          <p>
-            <span lang="fr">Bot de trading en paper trading piloté par un graphe d'agents LangGraph (découverte, analyse technique, risque, exécution) et un LLM 100 % local via Ollama. Passerelle FastAPI isolant les clés API, tableau de bord Streamlit, tests unitaires et d'intégration mockés.</span>
-            <span lang="en">Paper-trading bot driven by a LangGraph agent graph (discovery, technical analysis, risk, execution) with a fully local LLM via Ollama. FastAPI gateway isolating API keys, Streamlit dashboard, mocked unit and integration tests.</span>
-          </p>
-          <ul class="tags"><li>LangGraph</li><li>Ollama</li><li>FastAPI</li><li>Streamlit</li><li>pytest</li></ul>
-          <a class="project__link" href="https://github.com/JLucGauvrit/BotMarket" target="_blank" rel="noopener"><span lang="fr">Voir le code</span><span lang="en">View code</span> ↗</a>
         </article>
 
         <article class="project reveal" data-tags="green">
@@ -416,7 +400,7 @@
         </div>
         <div class="skill reveal">
           <h3><span lang="fr">Langues</span><span lang="en">Languages</span></h3>
-          <ul class="tags"><li><span lang="fr">Français · natif</span><span lang="en">French · native</span></li><li><span lang="fr">Anglais · C1 (TOEIC 850)</span><span lang="en">English · C1 (TOEIC 850)</span></li></ul>
+          <ul class="tags"><li><span lang="fr">Français · natif</span><span lang="en">French · native</span></li><li><span lang="fr">Anglais · C1 (TOEIC 870)</span><span lang="en">English · C1 (TOEIC 870)</span></li></ul>
         </div>
       </div>
     </section>
